@@ -1,4 +1,4 @@
-#Lab_Timp
+# Lab_Timp
 
 **Lab1** - This program prohibits creating, copying or renaming files with specified names in the current (the one it is in) directory (file masks can be used). The list of names or their templates must be stored in the file template.tbl, as text. This file must be protected from deletion, unauthorized viewing and modification. When installing the program, you can provide an option to disable it with a password stored in the first line of the template.tbl file in hashed form.
 The program must be able to turn the protection mode on and off.
