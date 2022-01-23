@@ -19,9 +19,6 @@ Requests the user for a folder (must use an existing folder and the option to cr
 secur.exe (analogous to the requirements for template.tbl from lab 1), which protects sys.ta,
 - Gathers (possible) information about the computer where the program is installed,
 - Encodes this information and writes it into the sys.tat file,
-- Signs it with the program user's private key
-and writes the signature, for example, in the Windows registry under
-𝐻𝐾𝐸𝑌𝐶𝑈𝑅𝑅𝐸𝑁𝑇𝑈𝑆𝐸𝑅 registry as the Signature value,
 - Launches secur.exe to protect sys.tat against unauthorized access,
 - Instructs secur.exe to run when the
 Open function for sys.tat, so that the protection is triggered even after the
