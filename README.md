@@ -7,30 +7,3 @@ The program must be able to turn the protection mode on and off.
 file. If there is such a name in the file, it gives a message about it. After entering the information, the program must exit the program and inform the user of its usage limit (time or number of runs). When the limit of runs is reached, the program should
 offer the user to purchase a full version or uninstall. When the program is reinstalled, it must report
 its previous presence on this computer and check the previous usage limits (i.e. not allow them to be exceeded in total
-
-**Lab3** 
-1. Create a text document (sys.tat) that contains "System information"
-2. Write a sysdoc.exe installer program for this document that pretends to install the update (showing the
-update progress line) to some program (e.g. Notepad
-or Paint):
-- Requests the user for a folder (there should be an option
-Requests the user for a folder (must use an existing folder and the option to create their own) to copy the "System Information",
-- Writes to the folder a file with the executable code of the program
-secur.exe (analogous to the requirements for template.tbl from lab 1), which protects sys.ta,
-- Gathers (possible) information about the computer where the program is installed,
-- Encodes this information and writes it into the sys.tat file,
-- Launches secur.exe to protect sys.tat against unauthorized access,
-- Instructs secur.exe to run when the
-Open function for sys.tat, so that the protection is triggered even after the
-protection is triggered after OS restart (there are several ways of such "binding").
-3. The secur.exe protection itself should include the following functionality:
-- Requesting information from the user about the name of the registry section with the electronic digital signature (last name of the student),
-- Reading the signature from the above registry section,
-which is verified using the user's public key,
-- Allow or deny viewing of the "System information" in the sys.tat file, depending on the correctness of the
-key.
-4) If the check fails, the protected program must stop operating and a corresponding message is displayed,
-5) The information collected about the computer includes at least:
-- User name,
-- Computer name,
-- Computer configuration (memory and CPU as a minimum) and OS version.
